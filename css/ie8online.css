@@ -1,0 +1,58 @@
+/*客服*/
+.right-side-flyelem { position: fixed; top: 350px; right: 0; z-index: 999; -webkit-transform: translateX(50px); -ms-transform: translateX(50px); transform: translateX(50px); -webkit-transition: -webkit-transform 1s linear; transition: transform 1s linear; -webkit-transition-timing-function: cubic-bezier(0, .93, .06, 1); transition-timing-function: cubic-bezier(0, .93, .06, 1); }
+.rsf-items { display: block; width: 50px; height: 50px; background: #333; cursor: pointer; }
+.right-side-flyelem.show { -webkit-transform: translateX(0px); -moz-transform: translateX(0px); -ms-transform: translateX(0px); transform: translateX(0xpx); opacity: 1; }
+.rsf-items { display: block; width: 50px; height: 50px; background: rgba(51, 51, 51, 0.75); cursor: pointer; }
+.side-icon { text-align: center; line-height: 50px; font-size: 32px; color: #fff; font-family: 'font-icons'; position: relative; }
+.si-top:before { content: "\e620"; }
+.si-qq:before { content: "\e61c"; }
+.si-ppt:before { content: "\e61e"; }
+.si-pry:before { content: "\e61f"; }
+.si-phone:before { content: "\e61d"; }
+.si-2wm:before { content: "\E601"; }
+.side-icon:before { position: relative; z-index: 1; }
+.side-icon p { position: absolute; display: block; content: " "; height: 50px; width: 150px; background: #019875; top: 0; right: 0; -webkit-transform: translateX(150px); -ms-transform: translateX(150px); transform: translateX(150px); -webkit-transform-origin: right center; -ms-transform-origin: right center; transform-origin: right center; -webkit-transition-property: -webkit-transform, color, text-indent; transition-property: transform, color, text-indent; -webkit-transition-duration: 0.6s, 0.6s, 1s; transition-duration: 0.6s, 0.6s, 1s; -webkit-transition-delay: 0s, 0.2s, 0.2s; transition-delay: 0s, 0.2s, 0.2s; -webkit-transition-timing-function: cubic-bezier(0, 1, .09, 1); transition-timing-function: cubic-bezier(0, 1, .09, 1); }
+.side-icon:hover p { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); color: #fff; text-indent: 10px; }
+.side-icon p { line-height: 50px; font-size: 14px; color: #019875; text-align: left; text-indent: 30px; font-family: "Helvetica Neue", \5FAE\8F6F\96C5\9ED1, Tohoma; }
+.side-icon p { display: none; }
+.side-icon:hover p { display: block; }
+.side-icon p, .side-icon a { color: #ffffff; }
+.si-pry:hover p { width: 200px; height: 150px; }
+.si-2wm:hover p { width: 200px; padding-right: 50px; text-indent: 0; }
+.si-2wm:hover p img { position: absolute; left: 0px; top: -150px; }
+.si-pry p a { display: block; }
+/*弹出客服*/
+#TB_overlay { position: fixed; z-index: 1000; top: 0px; left: 0px; height: 100%; width: 100%; }
+.TB_overlayMacFFBGHack { background: url(macFFBgHack.png) repeat; }
+.TB_overlayBG { background-color: #000; filter: alpha(opacity=75); -moz-opacity: 0.75; opacity: 0.75; }
+* html #TB_overlay { /* ie6 hack */ position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+#TB_window { position: fixed; background: #ffffff; z-index: 1002; color: #000000; display: none; border: 4px solid #525252; text-align: left; top: 50%; left: 50%; }
+* html #TB_window { /* ie6 hack */ position: absolute; margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+#TB_window img#TB_Image { display: block; margin: 15px 0 0 15px; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; border-top: 1px solid #666; border-left: 1px solid #666; }
+#TB_caption { height: 25px; padding: 7px 30px 10px 25px; float: left; }
+#TB_closeWindow { height: 25px; padding: 11px 25px 10px 0; float: right; }
+#TB_ajaxWindowTitle { padding: 20px 30px 10px 120px; font-size: 14px; }
+#TB_closeAjaxWindow { text-indent: 999em; overflow: hidden; width: 1px; height: 1px; }
+#TB_closeAjaxWindow a { position: absolute; right: -14px; top: -14px; width: 30px; height: 30px; margin-left: 0; background: url(/static/images/xubox_ico0.png) -60px -195px no-repeat; text-indent: 999em; overflow: hidden; z-index: 999; }
+#TB_closeAjaxWindow a:hover { background-position: -91px -195px; _background-position: -51px -7px; }
+#TB_title { background: url(/static/images/kefu_title.gif) no-repeat 5px 0; height: 150px; position: relative; }
+#TB_ajaxContent { clear: both; padding: 0px 15px; overflow: auto; text-align: left; line-height: 1.4em; }
+#TB_ajaxContent div { width: 400px; margin: 10px auto; overflow: hidden; }
+#TB_ajaxContent div b, #TB_ajaxContent div ul, #TB_ajaxContent div ul li { float: left; display: inline-block; }
+#TB_ajaxContent div b { width: 70px; text-align: right; }
+#TB_ajaxContent div ul { width: 330px; }
+#TB_ajaxContent div ul li { padding-bottom: 10px; }
+#TB_ajaxContent div ul li a { box-sizing: content-box!important; width: 82px; text-align: center; color: #666; display: block; }
+#TB_ajaxContent div:last-child ul li a { width: 105px; }
+#TB_ajaxContent div ul li a img { vertical-align: middle; margin-right: 3px; }
+#TB_ajaxContent.TB_modal { padding: 15px; }
+#TB_ajaxContent p { padding: 5px 0px 5px 0px; }
+#TB_load { position: fixed; display: none; height: 13px; width: 208px; z-index: 103; top: 50%; left: 50%; margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */ }
+* html #TB_load { /* ie6 hack */ position: absolute; margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+#TB_HideSelect { z-index: 99; position: fixed; top: 0; left: 0; background-color: #fff; border: none; filter: alpha(opacity=0); -moz-opacity: 0; opacity: 0; height: 100%; width: 100%; }
+* html #TB_HideSelect { /* ie6 hack */ position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+#TB_iframeContent { clear: both; border: none; margin-bottom: -1px; margin-top: 1px; _margin-bottom: 1px; }

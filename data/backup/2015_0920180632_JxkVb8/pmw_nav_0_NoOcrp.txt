@@ -1,0 +1,4 @@
+INSERT INTO `pmw_nav` VALUES('1','1','0','0,','导航菜单','#','','','','1','true');
+INSERT INTO `pmw_nav` VALUES('2','1','1','0,1,','热门下载','hot.php','','','','2','true');
+INSERT INTO `pmw_nav` VALUES('3','1','1','0,1,','会员手册','hysc.php','','','','3','true');
+INSERT INTO `pmw_nav` VALUES('5','1','1','0,1,','最新资讯','news.php','','','','5','true');

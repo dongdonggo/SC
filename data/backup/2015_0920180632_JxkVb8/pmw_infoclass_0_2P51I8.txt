@@ -1,0 +1,7 @@
+INSERT INTO `pmw_infoclass` VALUES('1','1','0','0,','2','资源下载','','','','','','','','1','true');
+INSERT INTO `pmw_infoclass` VALUES('2','1','0','0,','1','最新资讯','','','','','','','网罗全球最新COFFEE加盟资讯','2','true');
+INSERT INTO `pmw_infoclass` VALUES('15','1','1','0,1,','2','psd设计素材','','','','','','','','14','true');
+INSERT INTO `pmw_infoclass` VALUES('16','1','1','0,1,','2','视频制作素材','','','','','','','','15','true');
+INSERT INTO `pmw_infoclass` VALUES('17','1','1','0,1,','2','免费资源专区','','','','','','','','16','true');
+INSERT INTO `pmw_infoclass` VALUES('24','1','1','0,1,','2','学习资料','','','','','','','','22','true');
+INSERT INTO `pmw_infoclass` VALUES('23','1','1','0,1,','2','其他资源','','','','','','','','23','true');

@@ -1,0 +1,167 @@
+.section .show { -webkit-transition: 1s; -moz-transition: 1s; -ms-transition: 1s; -o-transition: 1s; transition: 1s }
+.section .text { width: 1000px; margin: 0 auto; text-align: center; color: #282828; font-size: 14px; line-height: 1.8; padding-top: 100px;}
+.section .text h1 { font-size: 28px }
+.section .text .button { color: #282828; border: 2px solid #000000; letter-spacing: 0; padding: 15px 20px; margin-top: 35px }
+.section1 { background: #ffffff url("http://www.9466.com/assets/css/images/p1-bk.png") no-repeat center 0; height: 800px }
+.section1 .slider .dotted { text-align: center; overflow: auto; padding-top: 490px }
+.section1 .slider .dotted li { display: inline-block; *display: inline; margin: 0 5px }
+.section1 .slider .dotted a { display: block; width: 10px; height: 10px; border-radius: 50%; background: #929292; cursor: pointer }
+.section1 .slider .dotted a:hover, .section1 .slider .dotted .active { background: #26B76E }
+.section1 .slider .banner1,.section1 .slider .banner2,.section1 .slider .banner3{ display: none }
+.section1 .slider .template { width:1200px; height:400px; position: absolute;left: 50%; margin-left: -600px; top: -243px; z-index: 2 }
+.section1 .slider .banner1 .template{ background: url("/static/images/banner1.png") no-repeat center; top: -243px; }
+.section1 .slider .banner2 .template {background: url("/static/images/banner2.png") no-repeat center; }
+.section1 .slider .banner3 .template { background: url("/static/images/banner3.png") no-repeat center; }
+
+.section1 .slider .template.show{ -webkit-transition: 0.5s; -moz-transition: 0.5s; -ms-transition: 0.5s; -o-transition: 0.5s; transition: 0.5s; top:40px}
+
+/*example*/
+.example{ width:1200px; height:500px; left:50%; margin-left:-600px; top:40px;}
+.example ol{position:relative;width:60px;height: 20px;top:-30px;left:70%;}
+.example ol li{ float:left; padding:0 5px;}
+.example ol li a{display: block; width: 10px; height: 10px; border-radius: 50%; background: #fff; cursor: pointer}
+.example ol li a:hover,.example ol li a.seleted{ background: #26B76E }
+
+.luara-left{position:relative;padding:0;overflow: hidden;}
+.luara-left ul{position: relative;padding: inherit;margin: 0;}
+.luara-left ul li{float: left;padding: inherit;margin: inherit;list-style: none;}
+.luara-left ul li img{width: inherit;height: inherit;}
+
+
+.section2 { background: #edf3f8; height: 600px; overflow: hidden }
+.section2 .animate { position: relative }
+.section2 .animate .left { width: 520px; height: 293px; background: url("http://www.9466.com/assets/css/images/p2-left.png") no-repeat; position: absolute; top: 0; left: 50%; margin-left: -100% }
+.section2 .animate .left.show { margin-left: -818px; transition: 0.5s 2s }
+.section2 .animate .right { width: 389px; height: 474px; position: absolute; top: 126px; right: 50%; margin-right: -100% }
+.section2 .animate .right.show { margin-right: -992px; transition: 0.5s 2s }
+.section2 .animate .right.big-screen { right: 0 }
+.section2 .animate .middle { width: 769px; height: 204px; background: url("http://www.9466.com/assets/css/images/p2-middle.png") no-repeat; position: absolute; top: 600px; left: 50%; margin-left: -384px }
+.section2 .animate .middle.show { top: 396px }
+.section2 .animate .icons .icon { background: url("http://www.9466.com/assets/css/images/p2-icons.png"); position: absolute; left: 50%; top: 600px }
+.section2 .animate .icons .icon.show { transition: 1s 1s }
+.section2 .animate .icons .icon.icon01 { width: 39px; height: 37px; background-position: 0 0 }
+.section2 .animate .icons .icon.icon01.show { top: 158px; margin-left: -425px }
+.section2 .animate .icons .icon.icon02 { width: 43px; height: 38px; background-position: 0 -57px }
+.section2 .animate .icons .icon.icon02.show { top: 262px; margin-left: -407px }
+.section2 .animate .icons .icon.icon03 { width: 54px; height: 49px; background-position: 0 -114px }
+.section2 .animate .icons .icon.icon03.show { top: 326px; margin-left: -352px }
+.section2 .animate .icons .icon.icon04 { width: 44px; height: 37px; background-position: 0 -184px }
+
+.section2 .animate .icons .icon.icon04.show { top: 196px; margin-left: -343px }
+.section2 .animate .icons .icon.icon05 { width: 49px; height: 31px; background-position: 0 -241px }
+.section2 .animate .icons .icon.icon05.show { top: 269px; margin-left: -271px }
+.section2 .animate .icons .icon.icon06 { width: 40px; height: 10px; background-position: 0 -292px }
+.section2 .animate .icons .icon.icon06.show { top: 234px; margin-left: -222px }
+.section2 .animate .icons .icon.icon07 { width: 27px; height: 29px; background-position: 0 -322px }
+.section2 .animate .icons .icon.icon07.show { top: 338px; margin-left: -220px }
+.section2 .animate .icons .icon.icon08 { width: 43px; height: 32px; background-position: 0 -371px }
+.section2 .animate .icons .icon.icon08.show { top: 292px; margin-left: -158px }
+.section2 .animate .icons .icon.icon09 { width: 37px; height: 28px; background-position: 0 -423px }
+.section2 .animate .icons .icon.icon09.show { top: 358px; margin-left: -114px }
+.section2 .animate .icons .icon.icon10 { width: 31px; height: 28px; background-position: 0 -471px }
+.section2 .animate .icons .icon.icon10.show { top: 353px; margin-left: -27px }
+.section2 .animate .icons .icon.icon11 { width: 47px; height: 21px; background-position: 0 421px }
+.section2 .animate .icons .icon.icon11.show { top: 327px; margin-left: 50px }
+.section2 .animate .icons .icon.icon12 { width: 42px; height: 11px; background-position: 0 380px }
+.section2 .animate .icons .icon.icon12.show { top: 372px; margin-left: 119px }
+.section2 .animate .icons .icon.icon13 { width: 45px; height: 34px; background-position: 0 349px }
+.section2 .animate .icons .icon.icon13.show { top: 276px; margin-left: 143px }
+.section2 .animate .icons .icon.icon14 { width: 28px; height: 31px; background-position: 0 295px }
+.section2 .animate .icons .icon.icon14.show { top: 337px; margin-left: 208px }
+.section2 .animate .icons .icon.icon15 { width: 35px; height: 29px; background-position: 0 245px }
+.section2 .animate .icons .icon.icon15.show { top: 284px; margin-left: 246px }
+.section2 .animate .icons .icon.icon16 { width: 44px; height: 43px; background-position: 0 197px }
+.section2 .animate .icons .icon.icon16.show { top: 336px; margin-left: 302px }
+.section2 .animate .icons .icon.icon17 { width: 32px; height: 28px; background-position: 0 142px }
+.section2 .animate .icons .icon.icon17.show { top: 245px; margin-left: 308px }
+.section2 .animate .icons .icon.icon18 { width: 41px; height: 35px; background-position: 0 102px }
+.section2 .animate .icons .icon.icon18.show { top: 273px; margin-left: 360px }
+.section2 .animate .icons .icon.icon19 { width: 46px; height: 38px; background-position: 0 54px }
+.section2 .animate .icons .icon.icon19.show { top: 188px; margin-left: 376px }
+.section3 { background: #ffffff; height: 750px }
+.section3 .text { padding-top: 110px }
+.section3 .animate { background: #ffffff url("../images/sectionimg.png") center 788px no-repeat; width: 100%; height: 788px }
+.section3 .animate.show { background-position: center 0 }
+.section4 { background: #0FB9FF url("../images/sectin4.png") center 0 no-repeat; height: 816px }
+.section4 .text { color: #ffffff; padding-top: 65px }
+.section4 .text p { font-size: 24px }
+.section4 .circles { position: relative }
+.section4 .circles .circle { position: absolute; left: 50% }
+.section4 .circles .circle01 { top: 419px; margin-left: -403px; background: url("http://www.9466.com/assets/css/images/p4-bu01.png") center no-repeat; background-size: 0; width: 215px; height: 215px; z-index: 2 }
+.section4 .circles .circle01.show { background-size: 187px }
+.section4 .circles .circle01.change { background: url("http://www.9466.com/assets/css/images/p4-bu01.png") center no-repeat }
+.section4 .circles .circle02 { top: 210px; margin-left: -290px; background: url("http://www.9466.com/assets/css/images/p4-bu02.png") center no-repeat; background-size: 0; width: 240px; height: 240px }
+.section4 .circles .circle02.show { background-size: 209px }
+.section4 .circles .circle02.change { background: url("http://www.9466.com/assets/css/images/p4-bu02.png") center no-repeat }
+.section4 .circles .circle03 { top: 425px; margin-left: -155px; background: url("http://www.9466.com/assets/css/images/p4-bu03.png") center no-repeat; background-size: 0; width: 129px; height: 129px }
+.section4 .circles .circle03.show { background-size: 114px }
+.section4 .circles .circle03.change { background: url("http://www.9466.com/assets/css/images/p4-bu03.png") center no-repeat }
+.section4 .circles .circle04 { top: 199px; margin-left: -29px; background: url("http://www.9466.com/assets/css/images/p4-bu04.png") center no-repeat; background-size: 0; width: 135px; height: 135px }
+.section4 .circles .circle04.show { background-size: 118px }
+.section4 .circles .circle04.change { background: url("http://www.9466.com/assets/css/images/p4-bu04.png") center no-repeat }
+.section4 .circles .circle05 { top: 389px; margin-left: -22px; background: url("http://www.9466.com/assets/css/images/p4-bu05.png") center no-repeat; background-size: 0; width: 175px; height: 175px; z-index: 2 }
+.section4 .circles .circle05.show { background-size: 151px }
+.section4 .circles .circle05.change { background: url("http://www.9466.com/assets/css/images/p4-bu05.png") center no-repeat }
+.section4 .circles .circle06 { top: 311px; margin-left: 132px; background: url("http://www.9466.com/assets/css/images/p4-bu06.png") center no-repeat; background-size: 0; width: 135px; height: 135px }
+.section4 .circles .circle06.show { background-size: 118px }
+.section4 .circles .circle06.change { background: url("http://www.9466.com/assets/css/images/p4-bu06.png") center no-repeat }
+.section4 .circles .circle07 { top: 405px; margin-left: 347px; background: url("http://www.9466.com/assets/css/images/p4-bu07.png") center no-repeat; background-size: 0; width: 195px; height: 195px; z-index: 2 }
+.section4 .circles .circle07.show { background-size: 169px }
+.section4 .circles .circle07.change { background: url("http://www.9466.com/assets/css/images/p4-bu07.png") center no-repeat }
+.section4 .circles .circle08 { top: 389px; margin-left: -441px; background: url("http://www.9466.com/assets/css/images/p4-bu08.png") center no-repeat; background-size: 0; width: 23px; height: 23px }
+.section4 .circles .circle08.show { background-size: 23px }
+.section4 .circles .circle09 { top: 360px; margin-left: -32px; background: url("http://www.9466.com/assets/css/images/p4-bu09.png") center no-repeat; background-size: 0; width: 23px; height: 23px }
+.section4 .circles .circle09.show { background-size: 23px }
+.section4 .circles .circle10 { top: 240px; margin-left: 220px; background: url("http://www.9466.com/assets/css/images/p4-bu10.png") center no-repeat; background-size: 0; width: 23px; height: 23px }
+.section4 .circles .circle10.show { background-size: 23px }
+.section4 .circles .circle11 { top: 463px; margin-left: 240px; background: url("http://www.9466.com/assets/css/images/p4-bu11.png") center no-repeat; background-size: 0; width: 31px; height: 31px }
+.section4 .circles .circle11.show { background-size: 31px }
+.section4 .circles .circle-b.show { -webkit-animation: 1s showCircleB; animation: 1s showCircleB }
+.section4 .circles .circle08.showCircle { -webkit-animation: 1.5s 0.25s showCircle infinite; animation: 1s 0.25s showCircle infinite }
+.section4 .circles .circle09.showCircle { -webkit-animation: 1.5s 0.5s showCircle infinite; animation: 1s 0.5s showCircle infinite }
+.section4 .circles .circle10.showCircle { -webkit-animation: 1.75s 0s showCircle infinite; animation: 1s 0s showCircle infinite }
+.section4 .circles .circle11.showCircle { -webkit-animation: 1.5s 0.25s showCircle infinite; animation: 1s 0.25s showCircle infinite }
+@-webkit-keyframes showCircleB {
+	0% { -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0) }
+	75% { -webkit-transform: scale(1.25, 1.25); -moz-transform: scale(1.25, 1.25); -ms-transform: scale(1.25, 1.25); -o-transform: scale(1.25, 1.25); transform: scale(1.25, 1.25) }
+	100% { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1) }
+}
+@keyframes showCircleB {
+	0% { -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0) }
+	75% { -webkit-transform: scale(1.25, 1.25); -moz-transform: scale(1.25, 1.25); -ms-transform: scale(1.25, 1.25); -o-transform: scale(1.25, 1.25); transform: scale(1.25, 1.25) }
+	100% { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1) }
+}
+@-webkit-keyframes showCircle {
+	0% { -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0) }
+	50% { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1) }
+	100% { -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0) }
+}
+@keyframes showCircle {
+	0% { -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0) }
+	50% { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1) }
+	100% { -webkit-transform: scale(0, 0); -moz-transform: scale(0, 0); -ms-transform: scale(0, 0); -o-transform: scale(0, 0); transform: scale(0, 0) }
+}
+.section4 .clouds { position: relative }
+.section4 .clouds .cloud { width: 100%; height: 132px; position: absolute; top: 488px; left: 0 }
+.section4 .clouds .cloud.cloud-left { background: url("http://www.9466.com/assets/css/images/p4-cloudl.png"); z-index: 1 }
+.section4 .clouds .cloud.cloud-left.play { -webkit-animation: 60s linear cloudLeft infinite; animation: 60s linear cloudLeft infinite }
+.section4 .clouds .cloud.cloud-right { background: url("http://www.9466.com/assets/css/images/p4-cloudr.png") }
+.section4 .clouds .cloud.cloud-right.play { -webkit-animation: 60s linear cloudRight infinite; animation: 60s linear cloudRight infinite }
+@-webkit-keyframes cloudLeft {
+	0% { background-position: 0 0 }
+	100% { background-position: -2166px 0 }
+}
+@keyframes cloudLeft {
+	0% { background-position: 0 0 }
+	100% { background-position: -2166px 0 }
+}
+@-webkit-keyframes cloudRight {
+	0% { background-position: 0 0 }
+	100% { background-position: 2088px 0 }
+}
+@keyframes cloudRight {
+	0% { background-position: 0 0 }
+	100% { background-position: 2088px 0 }
+}
+.section5 { background-color: #ffffff; height: 530px; display: none; }
+.section5 .text { padding-top: 60px }

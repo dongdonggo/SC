@@ -1,0 +1,424 @@
+html, body { margin: 0; padding: 0; height: 100% }
+body { background: #f7f7f7 }
+#wrapper { min-height: 100%; position: relative }
+#footer-mid { padding-bottom: 40px }
+#footer { width: 100%; height: 40px; position: absolute; bottom: 0; left: 0 }
+.ui-price { }
+.ui-price .number { color: #e5004f; padding: 0 2px }
+.topbar, .bottombar { background:url("../img/footerBottom.png"); clear: both;}
+.topbar { box-shadow: 0 1px 6px #ddd; height: 80px }
+.topbar .button { font-size: 16px; margin-top: 22px; padding: 8px 6px 8px 10px; *padding-right: 10px }
+.topbar .button:hover { color: #ffffff }
+.logo { width: 270px; height: 80px; background: transparent url(images/helper-logo-v2.png) no-repeat 0 24px; text-indent: -9999em; overflow: hidden }
+.nav { height: 80px; margin-left: 30px }
+.nav li { float: left }
+.nav a { float: left; height: 42px; line-height: 42px; margin: 20px 5px; font-size: 16px; color: #ffffff; padding: 0 15px }
+.user { height: 80px; line-height: 42px; font-size: 14px; position: relative }
+.userwrap img { overflow: hidden; margin: 20px 10px }
+.username { display: block; height: 70px; line-height: 70px; margin: 5px; color: #b7b7b7; overflow: hidden }
+.username .user_nav { width: 0; height: 0; border-top: 7px solid transparent; border-bottom: 7px solid #555555; border-left: 7px solid transparent; float: right; margin: 55px 0 0 18px }
+.user a:hover, .userwrap:hover span { color: #ffffff }
+.user_menu { position: absolute; top: 80px; right: 0px; display: none; z-index: 200 }
+.user_menu ul { background: #292a2e }
+.user_menu li { }
+.user_menu li a { display: block; width: 120px; line-height: 22px; padding: 10px 10px 10px 45px; color: #a6a6a6; border-bottom: 1px solid #303136 }
+.user_menu li a:hover { background: #34353a; color: #ffffff }
+.user_menu .icon-exit { background: url("images/ico-exit.png") no-repeat 22px 12px }
+.user_menu .icon-exit:hover { background: #34353a url("images/ico-exit-h.png") no-repeat 22px 12px; color: #ffffff }
+.user_menu li a sup { display: block; float: right; height: 18px; line-height: 18px; font-size: 12px; text-align: center; color: #fff; background-color: #26b76e; padding: 0 5px; margin-top: 2px; visibility: hidden }
+.header .login { height: 40px; padding: 20px 0 20px; overflow: hidden }
+.header .login span { float: left; display: block; line-height: 40px; font-size: 14px; margin-right: 10px; color: #a6a6a6 }
+.header .login a { float: left; display: inline-block; width: 20px; height: 20px; margin: 10px 5px; background: url(images/login-icons.png) no-repeat }
+.header .login a.qq { background-position: 0 0 }
+.header .login a.sina { width: 22px; background-position: -39px 0 }
+.header .login a.douban { background-position: -82px 1px }
+.header .login a.renren { width: 27px; background-position: -119px 0 }
+.header .login a.qq:hover { background-position: 0 -28px }
+.header .login a.sina:hover { width: 22px; background-position: -39px -28px }
+.header .login a.douban:hover { background-position: -82px -27px }
+.header .login a.renren:hover { width: 27px; background-position: -119px -28px }
+.bottombar .footer { line-height: 1.5; }
+.bottombar .footer hr { border: none; clear: both }
+.bottombar .footer ul { margin: 50px 0 10px; width: 250px; text-align: center; border-right: 1px dotted #555 }
+.bottombar .footer ul.flast{border-right: none;}
+.bottombar .footer ul.flast li img{width:140px;height:140px;}
+.bottombar .footer ul li { font-size: 14px; color: #fff; line-height: 27px }
+.bottombar .footer ul li h1 { line-height: 2; color: #fff; font-size: 18px }
+.bottombar .footer ul li a { font-size: 14px; color: #fff; cursor: pointer; display: block; height: 27px; line-height: 27px }
+.bottombar .footer ul li a:hover { color: #ffffff }
+.bottombar .footer .qr-code { margin: 61px 0 61px 75px; padding: 2px; background: #ffffff }
+.bottombar .footer .qr-code h3 { text-align: center }
+.bottombar .footer p { text-align: center; color: #fff; line-height: 50px }
+.bottombar .footer p a{color:#fff;}
+.bottombar .footer p a:hover{text-decoration: underline;color:#fff;}
+.bottombar .footer ul li.tel{font-size: 36px;color:#06e4b1; line-height: 48px;}
+.pages-main { padding: 30px 0 20px; min-height: 400px; overflow: hidden }
+.pages-menu { float: left; width: 165px }
+.pages-menu ul { }
+.pages-menu ul li a { display: block; width: 165px; line-height: 45px; height: 45px; text-align: center; font-size: 14px; color: #555 }
+.pages-menu ul li a.active { background: #f4f4f4; color: #31C690 }
+.pages-menu ul li a:hover { color: #31C690 }
+.pages-box { float: right; width: 800px }
+.pages-box h2 { font-size: 24px; padding-bottom: 10px }
+.pages-box h3 { font-size: 20px; padding-bottom: 10px; margin-bottom: 10px; border-bottom: 1px dashed #ccc }
+.pages-box h4 { font-size: 16px; padding-bottom: 10px }
+.pages-box .banner { display: block; width: 100%; height: 240px; background: #31C690; margin-bottom: 10px }
+.pages-box p { margin-bottom: 10px; text-indent: 20px; font-size: 14px; line-height: 1.8; min-height: 10px }
+.job-detail .title { font-size: 20px; padding: 20px 0 5px 0; margin-bottom: 10px; border-bottom: 1px dashed #ccc }
+.job-detail .h3 { padding: 10px 0; font-size: 16px; border-bottom: 0 }
+.job-detail p { margin-bottom: 0; padding: 3px 0; color: #666 }
+.project-list-container { padding: 30px 0 0 0 }
+.project-filter-buttons a { background-color: #f4f4f4; padding: 5px 20px; display: inline-block; color: #555; font-size: 18px; margin-right: 30px }
+.project-filter-buttons .current, .project-filter-buttons a:hover { background-color: #2386d9; color: #fff }
+.project-list-content .thumb { width: 253px; height: 194px; overflow: hidden; zoom: 1; border: 1px solid #ddd }
+.project-list-content .thumb a { overflow: hidden; border: 2px solid #fff; overflow: hidden; display: block }
+.project-list-content .thumb:hover { border-color: #2486dc }
+.project-list-content .item { float: left; width: 257px; height: 245px; overflow: hidden; zoom: 1; display: inline; margin: 20px 25px 0 0 }
+.project-list-content .odd { margin-right: 40px; float: left }
+.project-list-content .even { float: right }
+.project-list-content .item .text { padding: 6px 0 0 0; line-height: 22px; color: #999 }
+.project-list-content .item .name { font-size: 16px; color: #333; margin-right: 6px; height: 25px; width: 100%; overflow: hidden; zoom: 1; display: block }
+.project-list-content .item .designer { color: #666 }
+.project-list-content .item .designer img { float: left; height: 18px; margin-top: 2px; margin-right: 5px; width: 18px }
+.project-list-content .item .name:hover, .project-list-content .item .designer:hover { color: #c00 }
+.login-container { }
+.login-container .m-container { padding: 30px 0; width: 550px; margin: 0 auto }
+body.embed .topbar { display: none }
+body.embed .login-container { position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; width: auto; height: 330px }
+body.embed .login-container .m-container { padding: 0 !important }
+body.embed .login-container .login-msg { margin-bottom: 10px }
+body.embed .bottombar { display: none }
+.login-connect { overflow: hidden; zoom: 1; padding: 60px 60px 0 }
+.login-connect .connect-a { float: left; width: 66px; height: 66px; margin: 0 20px; background-image: url(images/connect.png); background-repeat: no-repeat; opacity: 1; filter: Alpha(Opactiy=100) }
+.login-connect .connect-a:hover { opacity: 0.8; filter: Alpha(Opactiy=80) }
+.login-connect .sina { background-color: #ea5520; background-position: 9px 17px }
+.login-connect .qq { background-position: 9px -46px; background-color: #4bace5 }
+.login-connect .douban { background-position: 9px -116px; background-color: #4faf68 }
+.login-connect .renren { background-position: 9px -189px; background-color: #5380bf }
+.connect-title { margin-top: 40px; margin-bottom: 40px; margin-left: 96px; height: 20px }
+.connect-title .fl { width: 100px; height: 1px; border-top: 1px solid #eee; margin-top: 10px }
+.connect-title .title.fl { width: 130px; border-top: none; margin: 0 10px 0 10px; color: #666; font-size: 14px; text-align: center }
+.login-box { border: 1px solid #eeeeee }
+.login-box .login-title h2 { width: 548px; font-size: 18px; font-weight: bold; text-align: center; color: #666666; padding: 10px 0; border-bottom: 1px solid #eeeeee }
+.login-msg { background: #fcf8e3; border: 1px solid #fbeed5; font-size: 18px; line-height: 1.8; padding: 10px; width: 528px; color: #c09853; margin-bottom: 30px; text-align: center }
+.project-list-item { position: relative; width: 302px; height: 262px; padding: 10px; border: solid 1px transparent; box-shadow: 0; -webkit-transition: box-shadow .2s ease-in-out, border-color .2s ease-in-out; -moz-transition: box-shadow .2s ease-in-out, border-color .2s ease-in-out; -ms-transition: box-shadow .2s ease-in-out, border-color .2s ease-in-out; -o-transition: box-shadow .2s ease-in-out, border-color .2s ease-in-out; transition: box-shadow .2s ease-in-out, border-color .2s ease-in-out }
+.project-list-item:hover { border-color: #17b86b; box-shadow: 0 0 10px #e2e2e2 }
+.project-list-item .thumb { width: 300px; height: 226px; overflow: hidden }
+.project-list-item .title { padding: 12px 5px 6px 0; line-height: normal }
+.project-list-item .title .text { display: block; width: 255px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #545454; font-size: 14px }
+.project-list-item .title .text:hover { color: #c00 }
+.project-list-item .title .fr { color: #ccc; margin-top: 1px }
+.project-list-item .shadow { background-color: #000; opacity: 0; filter: Alpha(Opactiy=0); height: 40px; width: 300px; top: 196px; left: 10px; z-index: 1 }
+.project-list-item .operater { opacity: 0; filter: Alpha(Opactiy=0); width: 300px; height: 40px; top: 196px; left: 10px; z-index: 2 }
+.project-list-item .operater .icon { background-image: url(images/icon.png); float: left; width: 40px; height: 40px }
+.project-list-item .operater .icon:hover, .project-list-item .operater .a5hover { background-color: #000 }
+.project-list-item .operater .a1 { background-position: 0 4px }
+.project-list-item .operater .a2 { background-position: 3px -361px }
+.project-list-item .operater .a3 { background-position: 3px -88px }
+.project-list-item .operater .a4 { background-position: 3px -135px }
+.project-list-item .operater .a5 { background-position: 3px -180px }
+.project-list-item .operater .a6 { float: right; background-position: 3px -225px }
+.project-list-item .operater .a7 { background-position: 3px -405px; float: right }
+.project-list-item .operater .a8 { background-position: 3px -451px; float: right }
+.project-list-item .order-overlay { position: absolute; z-index: 999; top: 10px; bottom: 46px; left: 10px; right: 12px; background-color: #000; opacity: 0.2; filter: alpha(opacity=20); text-align: center; visibility: hidden }
+.project-list-item .icon-share { position: absolute; top: 0; left: 0; background: url(images/icon-share.png) 0 0/55px 55px no-repeat; width: 60px; height: 55px }
+.project-list-item .btn-order { position: absolute; z-index: 1000; left: 130px; top: 100px; display: inline-block; *display: inline; *zoom: 1; padding: 0 16px; height: 42px; line-height: 42px; cursor: pointer; font-size: 16px; visibility: hidden }
+.project-list-item .btn-payment { color: #fff; background-color: #26b76e }
+.project-list-item .btn-payment:hover { color: #fff; background-color: #15a45c }
+.project-list-item .btn-delete { color: #fff; background-color: #ed5e46 }
+.project-list-item .btn-delete:hover { color: #fff; background-color: #de5e46 }
+.project-list-item .order-status { display: inline-block; *display: inline; *zoom: 1; margin-right: 2px; padding: 1px 5px; color: #fff; font-size: 12px }
+.project-list-item .order-status-pending { background-color: #15a45c }
+.project-list-item .order-status-closed { background-color: #ed5e46 }
+.ui-wizard { position: relative }
+.ui-wizard .names { overflow: hidden; background-color: #2e2e2e; color: #fff }
+.ui-wizard .names .name { position: relative; display: block; float: left; padding: 12px 40px 12px 60px; cursor: default }
+.ui-wizard .names .name.name-first { padding-left: 40px }
+.ui-wizard .names .name:before, .ui-wizard .names .name:after { position: absolute; top: 0; content: ''; display: none; width: 45px; height: 45px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg) }
+.ui-wizard .names .name.active { background-color: #25b770 }
+.ui-wizard .names .name.active:before { display: block; left: -32px; background-color: #2e2e2e }
+.ui-wizard .names .name.name-first.active:before { display: none }
+.ui-wizard .names .name.active:after { display: block; right: -14px; background-color: #25b770 }
+.ui-wizard .cards { position: relative; height: 277px }
+.ui-wizard .card { position: absolute; left: 0; right: 0; top: 0; bottom: 0; display: none }
+.ui-wizard .card.loading { background: url(images/loading_1.gif) no-repeat center }
+.ui-wizard .card.active { display: block }
+.ui-wizard .card .actions { position: absolute; left: 20px; right: 20px; bottom: 20px; text-align: right }
+.ui-wizard .card .actions .action { margin-left: 10px }
+.ui-wizard .card .actions .action.left { float: left; margin-left: 0; margin-right: 10px }
+.ui-wizard .state.loading { display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; background: rgba(255, 255, 255, 0.7) url(images/loading_1.gif) no-repeat center }
+.ui-wizard .step1-title { margin-top: 55px }
+.export { background-color: #f4f4f4; font-size: 14px }
+.export h1 { font-size: 20px; font-weight: normal; color: #575757; padding: 0 0 10px 20px }
+.export .button { border: none; background-color: #26b76e; color: #ffffff; padding: 15px 10px; text-align: center; cursor: pointer; letter-spacing: normal }
+.export .input { border-color: #d2d2d2; padding: 9px 7px }
+.export .input:hover { border-color: #979797 }
+.export .input:focus { border-color: #26b76e }
+.export .sidebar { float: left; width: 190px; padding: 20px 0 20px 10px; color: #727272 }
+.export .sidebar .navs { text-align: right; height: 350px }
+.export .sidebar .navs li { margin-bottom: 5px }
+.export .sidebar .navs a { display: block; padding: 10px 20px; color: #575757; cursor: pointer }
+.export .sidebar .navs a:hover, .export .sidebar .navs a.active { background-color: #ffffff }
+.export .sidebar .navs a.active { cursor: default }
+.export .sidebar .action { text-align: right; padding: 10px 20px 0 0 }
+.export .content { height: 470px; overflow: hidden; background-color: #ffffff }
+.export p { color: #919090; margin-top: 20px; line-height: 24px }
+.export .form-download { width: 344px; margin: 80px auto; padding-top: 150px; text-align: center; background: url(images/download.png) no-repeat center top }
+@media (min--moz-device-pixel-ratio:1.5), (-webkit-min-device-pixel-ratio:1.5), (min-device-pixel-ratio:1.5), (min-resolution:144dpi), (min-resolution:1.5dppx) {
+	.export .form-download { background-image: url(images/download@2x.png); background-size: 128px 119px }
+}
+.export .form-download .button { width: 250px }
+.export .form-domain { margin: 50px 20px }
+.export .form-domain .row { padding-bottom: 10px; clear: both }
+.export .form-domain .row label { display: block; text-align: right; margin-top: 5px; margin-bottom: 5px; text-align: left }
+.export .form-domain .row .input-control { display: inline-block; overflow: hidden; color: #919090 }
+.export .form-domain .row-tips { color: #919090; margin: 20px 0 10px; line-height: 24px }
+.export .form-domain .msg { display: inline-block; background-color: #F2DEDE; border-color: #EBCCD1; color: #A94442; height: 20px; line-height: 20px; padding: 4px 10px; margin-left: 5px }
+.export .form-domain .msg.hide { display: none }
+.export .form-domain .msg.success { background-color: #DFF0D8; border-color: #D6E9C6; color: #3C763D }
+.export .form-ftp { margin: 50px 0; width: 530px }
+.export .form-ftp .row { padding-bottom: 10px; clear: both }
+.export .form-ftp .row label { display: block; float: left; width: 100px; text-align: right; margin-top: 5px; margin-right: 10px }
+.export .form-ftp .row .input-control { overflow: hidden }
+.export .form-ftp .row-tips { color: #919090; margin: 20px 0 10px; line-height: 24px }
+.export .form-link { padding: 60px 20px }
+.export .form-link p { margin-top: 15px }
+.export .form-auto-export { margin: 50px 0; width: 530px }
+.export .form-auto-export .row { margin: 0 0 10px 40px; clear: both; overflow: hidden }
+.export .form-auto-export .row label { display: block; float: left; width: 84px; color: #555555; text-align: right; margin-top: 10px; margin-right: 10px }
+.export .form-auto-export .row .input { height: 20px; padding: 10px }
+.export .form-auto-export .row #project-path { width: 340px }
+.export .form-auto-export .row .copy-link { display: inline-block; padding: 10px 80px 10px 10px; width: 270px }
+.export .form-auto-export .row-tips { margin: 20px 0 10px 134px }
+.export .form-auto-export p { color: #9b9b9b; font-size: 12px; margin: 0 }
+.export .form-auto-export .button { width: 80px; height: 42px; border: none; padding: 0 }
+.export .loading { display: none; position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity: 0.95; filter: alpha(opacity=95); background: #FFF url(../images/loading.gif) no-repeat center center }
+.export .copy-link { position: relative; border: solid 1px #d2d2d2; background: #f4f4f4; color: #26b76e; font-size: 14px; padding: 10px 70px 10px 10px }
+.export .copy-link * { outline: none }
+.export .copy-link .copy-link-code { display: block; overflow: hidden; zoom: 1; white-space: nowrap; text-overflow: ellipsis }
+.export .copy-link .copy-link-icon { position: absolute; right: 10px; top: 9px; display: block; padding-left: 20px; background: url(images/copy.png) no-repeat left 4px; cursor: pointer; vertical-align: middle }
+.export .select2-container .select2-choice { height: 40px; border: 1px solid #c9c9c9; background-color: #fff; background-image: none }
+.export .select2-container .select2-chosen { line-height: 40px; background-image: none }
+.export .select2-container .select2-choice .select2-arrow { width: 40px; border-left: 1px solid #d2d2d2; background: #ffffff; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #eaeaea), color-stop(0.6, #fff)); background-image: -webkit-linear-gradient(center bottom, #eaeaea 0%, #fff 60%); background-image: -moz-linear-gradient(center bottom, #eaeaea 0%, #fff 60%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr ='#fff', endColorstr ='#eaeaea', GradientType = 0); background-image: linear-gradient(to top, #eaeaea 0%, #fff 60%) }
+.export .select2-container .select2-choice .select2-arrow b { background: url('images/select2-drop.png') no-repeat 14px 17px }
+.export .select2-dropdown-open .select2-choice .select2-arrow { background: transparent; border-left: none; filter: none }
+.export .select2-dropdown-open .select2-choice .select2-arrow b { background: url('images/select2-up.png') no-repeat 14px 17px }
+.export .select2-results .select2-highlighted { background: #f4f4f4; color: #444 }
+.export .select2-drop-active { border: 1px solid #26b76e; border-top: none }
+.export .select2-container-active .select2-choice, .export .select2-container-active .select2-choices { border: 1px solid #26b76e }
+.confirm-invitation { width: 553px; margin: 0 auto; padding: 30px 0 }
+.confirm-invitation .h2 { font-size: 24px; color: #555; line-height: 40px }
+.confirm-invitation .input { width: 420px; height: 24px; line-height: 24px; margin-right: 10px }
+.confirm-invitation .button { letter-spacing: 0; padding: 3px 15px 7px 15px }
+.confirm-invitation p { line-height: 1.8; font-size: 14px }
+.confirm-invitation .input-title { margin-top: 50px }
+.confirm-invitation .other { font-size: 14px; color: #999; line-height: 25px }
+.confirm-invitation .other li { }
+.invitation-code-input .button { letter-spacing: 0 }
+.invitation-code-input .input { margin: 10px 0; width: 300px; height: 24px; line-height: 24px }
+.invitation-code-input .textarea { margin-bottom: 10px; width: 420px }
+.invitation-code-input .prior { padding: 10px 0 20px 0; font-size: 12px; line-height: 24px }
+.invitation-code-input > p { padding-bottom: 10px; color: #999; font-size: 12px }
+.invitation-code-weibo .button { letter-spacing: 0 }
+.invitation-code-weibo .input { margin: 10px 0; width: 300px; height: 24px; line-height: 24px }
+.invitation-code-weibo .textarea { margin-bottom: 10px; width: 420px }
+.invitation-code-weibo .prior { padding: 10px 0 20px 0; font-size: 12px; line-height: 24px }
+.invitation-code-weibo > p { padding-bottom: 10px; color: #999; font-size: 12px }
+.dialog-invitation { overflow: hidden }
+.invitation-code-input .input { height: 24px; line-height: 24px }
+.dialog-invitation .d-footer { display: none }
+.invitation-code-error { display: none; height: 30px; width: 400px; background-color: #FFB423; border: 1px dashed; text-align: center; line-height: 30px; margin-bottom: 10px }
+.bind-container { }
+.bind-container .container { width: 553px; margin: 0 auto; padding: 100px 0 30px 0 }
+.bind-container .container .h2 { font-size: 24px; color: #555; line-height: 50px }
+.bind-container .container p { line-height: 1.8; font-size: 14px; color: #999 }
+.bind-container .container .form { padding: 20px 0 }
+.bind-container .container .form-group { padding: 8px 0 }
+.bind-container .container .form-group label { display: inline-block; width: 60px; text-align: right; padding-right: 10px; font-size: 14px }
+.bind-container .container .profession label { vertical-align: middle }
+.bind-container .container .form-group .input { display: inline-block; width: 300px; height: 24px; line-height: 24px; font-size: 14px }
+.bind-container .container .form-group .msg { display: inline-block; background-color: #F2DEDE; border-color: #EBCCD1; color: #A94442; height: 24px; line-height: 24px; padding: 5px 10px 4px; margin-left: 5px }
+.bind-container .container .profession .msg { padding-top: 4px; height: 20px; line-height: 20px; vertical-align: middle }
+.bind-container .container .form-group .success { background-color: #DFF0D8; border-color: #D6E9C6; color: #3C763D }
+.bind-container .container .question { display: block; background-color: #f1f1f1; color: #666666; line-height: 25px; padding: 20px; margin-top: 10px }
+.bind-container .container .qu-title { display: block; margin-bottom: 5px; color: #555555; font-weight: bold }
+.bind-container .container .qu-btn { color: #26B76E; cursor: pointer }
+.bind-container .container .button { letter-spacing: 0; padding: 3px 15px 7px 15px }
+.error-content { background: transparent url(images/xiangyun.jpg) no-repeat 0 160px; margin: 0 auto; width: 600px; min-height: 300px; padding-top: 155px }
+.error-content a, .error-content p { margin-left: 150px; font-size: 26px; line-height: 60px }
+.ui-group { display: inline-block; _display: inline; _zoom: 1; overflow: hidden }
+.ui-group-item { display: block; float: left; font-size: 12px; height: 12px; line-height: 12px; padding: 8px 15px; cursor: pointer; border: solid 1px #e4e4e4; background-color: #ffffff; color: #666666; margin-right: 10px }
+.ui-group-mini .ui-group-item { padding: 1px 8px 3px }
+.ui-group-item:hover, .ui-group-active { border-color: #26b76e; background-color: #26b76e; color: #ffffff }
+.ui-group-last { margin-right: 0 }
+.feedback-sidebar, .feedback-sidebar-item { margin: 0; padding: 0 }
+.feedback-sidebar { position: fixed; bottom: 30%; right: 15px; width: 40px; background: #FFFFFF; margin-bottom: -1px; _position: absolute; _right: auto; _left: expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft, 10)||0)-(parseInt(this.currentStyle.marginRight, 10)||0)) -15 }
+* html.ie6-position-fixed, * html.ie6-position-fixed body { _background-image: url(about:blank); _background-attachment: fixed }
+.feedback-sidebar-item { display: block; width: 40px; height: 38px; text-indent: -9999em; overflow: hidden; margin-bottom: 1px; background: #26B76E url(images/feedback.png) no-repeat center 11px; cursor: pointer }
+.feedback-sidebar-survey { background-position: center -62px }
+.feedback-sidebar-totop { background: #26B76E url("images/backtotop.png") no-repeat 8px }
+.feedback { }
+.feedback .column { width: 680px }
+.feedback-container { margin: 20px 0 }
+.feedback-row { overflow: hidden; padding-bottom: 10px }
+.feedback-row .ui-group { float: left; margin-top: 5px }
+.feedback-row .button { float: right; display: inline-block; padding: 10px 20px 10px 20px; color: #fff; background-color: #218bd0; font-size: 16px; line-height: 20px; height: 20px; text-align: center; border: none }
+.feedback-row .button:hover { opacity: 0.8; filter: alpha(opacity=80) }
+.feedback-items-container { margin-top: 10px }
+.feedback-form { position: relative }
+.feedback-form #form-add { display: none }
+.feedback-items { position: relative; min-height: 150px; _height: 150px }
+.feedback-message { position: absolute; left: 0; top: 0; width: 100%; height: 100%; -moz-box-sizing: border-box; box-sizing: border-box; border: dashed 1px #eaeaea }
+.feedback-loading { background: #fff url(../images/loading.gif) no-repeat center 40% }
+.feedback-message span { position: absolute; display: block; text-align: center; width: 100%; top: 50%; left: 0 }
+.feedback-title { display: block; padding: 5px 0 15px; font-size: 14px; color: #333333; overflow: auto }
+.feedback-title h2 { float: left; font-size: 24px }
+.feedback-title span { float: right; height: 36px; line-height: 36px }
+.feedback-item { font-size: 13px; margin-bottom: 10px; -webkit-transition: background-color 0.2s ease 0s; -ms-transition: background-color 0.2s ease 0s; -moz-transition: background-color 0.2s ease 0s; -o-transition: background-color 0.2s ease 0s; transition: background-color 0.2s ease 0s }
+.feedback-item-new { background-color: #FFFDE9 }
+.feedback-item-highlight { border: solid 1px #e4e4e4; margin-top: 5px; padding: 5px 15px; background-color: #fffde9 }
+.feedback-user { float: left; width: 40px; padding-top: 4px; margin-right: 20px }
+.feedback-user img { width: 40px; height: 40px; overflow: hidden }
+.feedback-entry { overflow: hidden; zoom: 1; color: #5E5E5E }
+.feedback-entry .feedback-entry { color: #666666 }
+.feedback-info { font-size: 12px; overflow: hidden; padding: 5px 0 }
+.feedback-time { float: left; margin-right: 10px; color: #999999 }
+.feedback-status { float: left; margin-right: 10px; color: #CC6666 }
+.feedback-action { float: right; display: none; margin-left: 10px }
+.feedback-action a { cursor: pointer }
+.feedback-action a, .feedback-action a:visited { color: #218bd0 }
+.feedback-action a:hover, .feedback-action a:active { color: #CC6666 }
+.feedback-content { }
+.feedback-content img { display: block; max-width: 100%; margin-bottom: 5px }
+.feedback-info .ui-group-mini { float: right }
+.feedback-info .ui-group-item { cursor: default }
+.feedback-admin { color: #26b76e; padding-bottom: 5px }
+.feedback-tips { float: right; margin: 5px 10px 0 0; display: block; font-size: 12px; height: 12px; line-height: 12px; padding: 9px 10px; text-align: center; color: red }
+.feedback-pager { text-align: center; padding-bottom: 20px }
+.invitation-list-container { padding: 35px 0; width: 600px }
+.invitation-list-title { font-size: 24px; color: #000000; padding-bottom: 10px }
+.invitation-list-description { font-size: 14px; color: #999999; padding-bottom: 15px }
+.invitation-tab { }
+.invitation-tab-items { border-bottom: solid 1px #f4f4f4; overflow: hidden; height: 33px }
+.invitation-tab-item { float: left; width: 66px }
+.invitation-tab-item a { display: block; height: 33px; line-height: 33px; cursor: pointer; text-decoration: none; padding: 0 15px }
+.invitation-tab-item a, .invitation-tab-item a:visited { color: #787878 }
+.invitation-tab-item a:hover, .invitation-tab-item a:active, .invitation-tab-items .active a { color: #169748 }
+.invitation-tab-items .active a { background-color: #f4f4f4 }
+.invitation-tab-content { padding: 0; display: none }
+.invitation-list-item { display: block; overflow: hidden; padding: 10px 5px; border-top: solid 1px #f4f4f4; height: 53px }
+.invitation-list-item-first { padding-top: 25px; border-top: none }
+.invitation-list-item-last { padding-bottom: 25px }
+.invitation-list-item code { font-family: "lucida console", monospace; display: block; float: left; clear: left }
+.invitation-list-item .code { padding-bottom: 5px; font-size: 18px; color: #232323; height: 27px }
+.invitation-list-item .link { font-size: 14px; color: #b1b1b1; height: 21px }
+.invitation-list-item .copy { float: right; display: block; visibility: hidden; padding-left: 20px; background: url("images/copy.png") no-repeat 0 2px; margin-left: 10px; font-style: normal; font-weight: normal; font-size: 12px; height: 18px; line-height: 18px; vertical-align: middle; color: #26b76e; cursor: pointer }
+.invitation-list-item embed { outline: none; display: block }
+.invitation-list-item .code-item { display: block; width: 100%; overflow: hidden; position: relative }
+.invitation-list-item .code-item:hover .copy, .invitation-list-item .hover .copy { visibility: visible }
+.invitation-list-item .copy-code { margin-top: 2px }
+.invitation-list-item .info { font-size: 12px; height: 18px; line-height: 18px }
+.invitation-list-item .info .userinfo { float: left; margin-right: 15px }
+.invitation-list-item .info .userinfo, .invitation-list-item .info .userinfo:visited { color: #26b76e; font-size: 12px }
+.invitation-list-item .info .userinfo img { width: 18px; height: 18px; float: left; margin-right: 5px }
+.invitation-list-item .info .userinfo span { }
+.invitation-list-item .info .datetime { color: #b1b1b1 }
+.invitation-list-empty { border: dashed 3px #f4f4f4; margin: 25px 0; padding: 30px 105px 35px }
+.invitation-list-empty-title { font-size: 14px; color: #000000; font-weight: normal; text-align: center }
+.invitation-list-empty-description { font-size: 12px; line-height: 1.8; color: #969696; margin-top: 15px }
+.browsers-container { margin: 0 auto }
+.browsers-container .m-container { width: 560px; text-align: center }
+.browsers-connect { overflow: hidden; zoom: 1 }
+.browsers-connect .connect-a { float: left; width: 99px; padding-top: 99px; line-height: 21px; margin: 0 20px; text-align: center; color: #555 }
+.browsers-connect .chrome { background: url(../images/chrome.png) no-repeat }
+.browsers-connect .firefox { background: url(../images/firefox.png) no-repeat }
+.browsers-connect .safari { background: url(../images/safari.png) no-repeat }
+.browsers-connect .ie { background: url(../images/ie.png) no-repeat }
+.browsers-connect em { display: block; color: #7b7b7b; font-size: 12px }
+.browsers-title { padding-bottom: 30px; font-size: 24px }
+.online-container { margin: 0 auto }
+.online-container .online-title { margin: 20px 0 }
+.online-container .online-title h2 { font-size: 24px }
+.online-container .online-who { overflow: hidden }
+.online-container .online-who ul { }
+.online-container .online-who li { float: left }
+.online-container .online-who li a { width: 40px; height: 40px; display: block; overflow: hidden }
+.online-container .online-who li img { width: 36px; height: 36px; padding: 2px }
+.online-container .online-comment { margin: 20px 0 }
+.changelog-container { margin: 0 auto; width: 600px; padding: 35px 0 }
+.changelog-container .changelog-title { }
+.changelog-container h2 { font-size: 24px }
+.changelog-container .changelog-box { overflow: hidden }
+.changelog-container .changelog-box ul { }
+.changelog-container .changelog-box li { float: left; width: 100%; margin: 10px 0 }
+.changelog-container .changelog-box .title { font-size: 20px; line-height: 1.8; color: #26b76e }
+.changelog-container .changelog-box .time { margin-left: 10px; font-size: 12px; color: #999 }
+.changelog-container .changelog-box p { font-size: 12px; line-height: 1.2; margin-bottom: 10px }
+.bsharecontainer #bdshare { float: none }
+.bsharecontainer #bdshare a { display: block; float: none; line-height: 14px; overflow: hidden; padding-left: 25px }
+.help-container { margin: 0 auto; padding: 20px 0 }
+.help-container .help-title { padding-bottom: 20px }
+.help-container h2 { font-size: 24px }
+.help-container h3 { font-size: 18px }
+.help-container .help-box { overflow: hidden }
+.help-container .help-menu { float: left; width: 330px; background: #f4f4f4; padding: 10px }
+.help-container .help-box ul { margin: 5px 10px 10px 5px }
+.help-container .help-box li { display: inline-block; width: 100%; font-size: 14px; color: #6b6b6b; line-height: 28px; height: 28px }
+.help-container .help-box a { color: #6b6b6b }
+.help-container .help-box li i { display: inline-block; height: 2px; width: 2px; background: #6b6b6b; margin-right: 6px; margin-bottom: 4px }
+.help-container .help-content { float: right; width: 630px }
+.help-container .help-content .title { font-size: 20px; line-height: 1.8; color: #26b76e; margin-bottom: 10px }
+.help-container .help-content .time { margin-left: 10px; font-size: 12px; color: #999 }
+.help-container .help-content p { font-size: 14px; line-height: 1.8; margin-bottom: 10px }
+.guide-list-container { min-height: 200px; background-color: #edf6ff; margin-bottom: 20px }
+.guide-list-container .guide-list-title { padding: 20px }
+.guide-list-container .item { float: left; margin-left: 20px }
+.guide-list-container .item a { font-size: 16px; color: #333 }
+.guide-list-container .item a:hover { color: #2c89c3 }
+.header .user .userwrap { position: relative }
+.header .user .userwrap sup { position: absolute; right: 2px; top: 16px; display: inline-block; padding: 1px 5px; background-color: #26b76e; color: #fff; font-size: 12px; line-height: normal; visibility: hidden }
+.home-notify { margin: 20px auto -10px; width: 960px; display: none }
+.ui-alert { position: relative; padding: 15px 20px; background-color: #fcf8e3; border: solid 1px #faebcc; font-size: 14px; color: #8a6d3b }
+.ui-alert a, .ui-alert a:visited { color: #8a6d3b; text-decoration: none; font-weight: bold }
+.ui-alert a:hover, .ui-alert a:active { color: #8a6d3b; text-decoration: underline }
+.ui-alert .ui-alert-content { line-height: 1.8 }
+.ui-alert strong, .ui-alert em { font-weight: bold; font-style: normal }
+.ui-alert .ui-alert-close { position: absolute; right: 10px; top: 2px; cursor: pointer }
+.slider-carousel { position: relative }
+.slider .inner { width: 587px; margin-top: 45px; margin-left: 5px }
+.slider-carousel { position: relative }
+.slider-carousel .item { height: 600px }
+.slider-carousel .slidesjs-navigation { width: 42px; height: 42px; display: block; position: absolute; text-indent: -9999em; top: 120px; z-index: 100; opacity: 0 }
+.slidesjs-previous { background: transparent url(images/prev.png) no-repeat; left: 10px }
+.slidesjs-next { background: transparent url(images/next.png) no-repeat; right: 10px }
+.slidesjs-pagination { position: absolute; z-index: 100; left: 0; right: 0; bottom: 10px; text-align: center }
+.slidesjs-pagination-item, .slidesjs-pagination-item a { display: inline-block; *display: inline; *zoom: 1 }
+.slidesjs-pagination-item a { width: 16px; height: 17px; text-indent: -9999em; margin-right: 10px; background-color: #ade8d2; border-radius: 20px }
+.slidesjs-pagination-item a:hover, .slidesjs-pagination-item a.active { background-color: #fff }
+.pas-hero { width: 1000px; height: 263px; overflow: hidden; margin: 15px auto 0; text-align: center }
+.pas-hero img { width: 1000px }
+.pas-container .content { border: solid 1px rgb(220, 220, 220); margin-top: 15px; margin-bottom: 20px; padding: 10px 20px }
+.pas-container .section { margin-bottom: 30px }
+.pas-container .section-title { position: relative; height: 50px; line-height: 50px; border-bottom: solid 3px #e6e6e6 }
+.pas-container .section-title h2 { position: absolute; left: 0; top: 0; bottom: -3px; width: 150px; font-size: 22px; border-bottom: solid 3px #33a5eb }
+.pas-container .section-content { padding: 20px 0 0; overflow: hidden }
+.pas-container .section-providers .text { color: rgb(51, 51, 51); overflow: hidden; zoom: 1; font-size: 14px; line-height: 1.8 }
+.pas-container .section-providers .text p { padding-bottom: 1em }
+.pas-container .section-providers .table { width: 336px; float: right; margin-left: 20px }
+.pas-container .section-providers .table table { width: 100% }
+.pas-container .section-providers .table th { background-color: rgb(125, 175, 213); color: #fff; padding: 5px 15px; font-size: 16px; text-align: left }
+.pas-container .section-providers .table td { color: #626262; background-color: rgb(244, 239, 239); margin-bottom: 5px; padding: 8px 15px; border-top: solid 5px #fff; font-size: 14px }
+.pas-container .section-providers .table .row-first td { border-top: none }
+.pas-container .section-providers .table td em { color: #000 }
+.pas-container .section-providers .table img { vertical-align: middle; padding-right: 5px }
+.ui-question { position: relative; top: -5px; right: -5px; vertical-align: middle; background: url(images/question.gif) no-repeat center center; display: inline-block; *display: inline; *zoom: 1; width: 20px; height: 20px; cursor: help }
+.dialog-login { padding: 0 }
+.dialog-login .login-box { border: none }
+.dialog-login .d-footer { display: none }
+.dialog-login .d-titleBar .d-close { right: 5px; top: 5px }
+.ui-pagination { text-align: center; padding-bottom: 30px }
+.ui-pagination a { display: inline-block; *display: inline; *zoom: 1; margin: 0 3px; padding: 5px 10px; background-color: #fff; border: solid 1px #17b86b }
+.ui-pagination a, .ui-pagination a:visited { color: #666 }
+.ui-pagination a:hover, .ui-pagination a:active { color: #fff; background-color: #17b86b }
+.ui-pagination a.current { cursor: default; color: #ccc; border-color: #ccc }
+.ui-pagination a.current:hover, .ui-pagination a.current:active { background-color: transparent }
