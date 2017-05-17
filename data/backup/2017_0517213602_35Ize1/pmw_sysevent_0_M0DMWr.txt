@@ -872,3 +872,16 @@ INSERT INTO `pmw_sysevent` VALUES('871','admin','1','infoimg','0','all','1442723
 INSERT INTO `pmw_sysevent` VALUES('872','admin','1','infolist','0','all','1442723444','127.0.0.1');
 INSERT INTO `pmw_sysevent` VALUES('873','admin','1','login','0','','1442743579','127.0.0.1');
 INSERT INTO `pmw_sysevent` VALUES('874','admin','1','database_backup','0','all','1442743581','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('875','admin','1','web_config','0','all','1495026621','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('876','admin','1','web_config','0','all','1495027353','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('877','admin','1','database_backup','0','all','1495027407','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('878','admin','1','infoimg','0','all','1495027413','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('879','admin','1','message','0','all','1495027415','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('880','admin','1','nav','0','all','1495027425','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('881','admin','1','web_config','0','all','1495027451','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('882','admin','1','member','0','all','1495027454','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('883','admin','1','nav','0','all','1495027621','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('884','admin','1','message','0','all','1495027622','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('885','admin','1','infoimg','0','all','1495027629','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('886','admin','1','nav','0','all','1495027696','127.0.0.1');
+INSERT INTO `pmw_sysevent` VALUES('887','admin','1','database_backup','0','all','1495028154','127.0.0.1');

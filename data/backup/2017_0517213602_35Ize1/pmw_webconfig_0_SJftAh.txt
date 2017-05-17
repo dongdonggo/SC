@@ -1,9 +1,9 @@
-INSERT INTO `pmw_webconfig` VALUES('1','cfg_webname','网站名称','0','string','会员系统-资源下载平台','1');
+INSERT INTO `pmw_webconfig` VALUES('1','cfg_webname','网站名称','0','string','智云智-资源下载平台','1');
 INSERT INTO `pmw_webconfig` VALUES('1','cfg_weburl','网站地址','0','string','http://localhost','2');
 INSERT INTO `pmw_webconfig` VALUES('1','cfg_webpath','网站目录','0','string','/newphp-2','3');
-INSERT INTO `pmw_webconfig` VALUES('1','cfg_author','网站作者','0','string','源码云平台','4');
+INSERT INTO `pmw_webconfig` VALUES('1','cfg_author','网站作者','0','string','智云智','4');
 INSERT INTO `pmw_webconfig` VALUES('1','cfg_generator','程序引擎','0','string','ymypt CMS','5');
-INSERT INTO `pmw_webconfig` VALUES('1','cfg_seotitle','SEO标题','0','string','','6');
+INSERT INTO `pmw_webconfig` VALUES('1','cfg_seotitle','SEO标题','0','string','智云智|资源下载，免费下载，会员专享','6');
 INSERT INTO `pmw_webconfig` VALUES('1','cfg_keyword','关键字设置','0','string','资源下载，免费下载，会员专享','7');
 INSERT INTO `pmw_webconfig` VALUES('1','cfg_description','网站描述','0','bstring','会员系统-资源下载平台','8');
 INSERT INTO `pmw_webconfig` VALUES('1','cfg_copyright','版权信息','0','bstring','Copyright 2014-2015 ymypt.com Ltd All Rights Reserved  ','9');
